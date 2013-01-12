@@ -16,6 +16,7 @@ describe('when Graph created', function () {
 
     it('should have edges and nodes', function () {
         assert(gr);
+        assert(!(gr instanceof Graph.errors.GraphStructureValidationError), gr);
         assert(gr.nodes);
         assert(gr.edges);
     });
