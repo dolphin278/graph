@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "properties": {
+        "nodes": {
+            "required": true,
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "required": true
+                    }
+                }
+            }
+        },
+        "edges": {
+            "type": "array",
+            "minItems": 1,
+            "required": true,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "from": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "to": {
+                        "type": "string",
+                        "required": true
+                    }
+                }
+            }
+        }
+    }
+}

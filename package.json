@@ -1,0 +1,29 @@
+{
+  "name": "node-graph",
+  "version": "0.0.0",
+  "description": "Simple library for graph manipulations",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dolphin278/graph.git"
+  },
+  "keywords": [
+    "graph",
+    "library",
+    "nodes",
+    "vertices",
+    "edges"
+  ],
+  "author": "Boris Egorov",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "JSV": "~4.0.2"
+  }
+}

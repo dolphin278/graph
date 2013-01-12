@@ -1,0 +1,40 @@
+{
+    "nodes": [
+        {
+            "name": "A"
+        },
+        {
+            "name": "B"
+        },
+        {
+            "name": "C",
+            "someArbitraryData": "arbitrary data"
+        },
+        {
+            "name": "D"
+        }
+    ],
+    "edges": [
+        {
+            "name": "AB",
+            "from": "A",
+            "to": "B",
+            "arbitraryData" : "arbitrary edge data"
+        },
+        {
+            "name": "AC",
+            "from": "A",
+            "to": "C"
+        },
+        {
+            "name": "BD",
+            "from": "B",
+            "to": "D"
+        },
+        {
+            "name": "CD",
+            "from": "C",
+            "to": "D"
+        }
+    ]
+}
