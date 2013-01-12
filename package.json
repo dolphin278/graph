@@ -2,7 +2,7 @@
   "name": "node-graph",
   "version": "0.0.0",
   "description": "Simple library for graph manipulations",
-  "main": "index.js",
+  "main": "lib/Graph.js",
   "directories": {
     "test": "test"
   },
