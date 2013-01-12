@@ -46,7 +46,6 @@ describe('when Graph created', function () {
     it('should be able to get list of inbound edges', function () {
         var inEdges = gr.inboundEdges('D');
         assert(Array.isArray(inEdges));
-        console.log(JSON.stringify(inEdges));
         assert(inEdges.length === 2);
         assert(inEdges[0].from === 'B');
         assert(inEdges[1].from === 'C');
