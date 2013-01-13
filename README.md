@@ -49,6 +49,7 @@ var gr = new Graph(structure);
 Constructor checks that argument conforms to graph JSON schema (locates in `schema/graph.json`). 
 
 **tl;dr** It requires `name` field for nodes and `name`, `from`, `to` fields for edges. Also it checks for `name` uniqueness amongst edges and nodes respectively.
+Then is checks that every edge points to existing nodes (`from` and `to` fields containing valid node names).
 
 ###outboundEdges(node)
 

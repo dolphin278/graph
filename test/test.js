@@ -8,6 +8,17 @@ var Graph = require('../lib/Graph');
 
 var testGraphDescription = require('./testGraphDescription.json');
 
+describe('when attempting to create Graph with hanging edge', function () {
+    var gr = null;
+    var invalidGraphSchema = JSON.parse(JSON.stringify(testGraphDescription));
+    invalidGraphSchema.edges[0].to = 'X'; //non-existent node
+
+    it('constructor should return error', function () {
+        gr = new Graph(invalidGraphSchema);
+        assert(gr instanceof Graph.errors.GraphStructureValidationError);
+    });
+});
+
 describe('when Graph created', function () {
     var gr = null;
     before(function () {
